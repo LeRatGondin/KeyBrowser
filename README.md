@@ -1,4 +1,4 @@
-# NavigateurKeylogger
+# KeyBrowser
 ### Langage utilisé 
 Python 3.10
 # Explication

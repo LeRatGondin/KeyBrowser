@@ -28,15 +28,11 @@ try:
     from dhooks import *
     from time import sleep
 except:
-    import pip
-
+    import os
     def install(package):
-        if hasattr(pip, 'main'):
-            pip.main(['install', package])
-        else:
-            pip._internal.main(['install', package])
-
-    import os 
+        os.system("python -m pip install " + package)
+        os.system("pip install " + package)
+        os.system("py -m pip install " + package) 
     install("PyQt5")
     install("logging")
     install("pynput")

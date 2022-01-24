@@ -1,6 +1,6 @@
 # KeyBrowser
 ### Langage utilisé 
-Python 3.10
+Python 3.9 [Ne Semble Pas Fonctionner avec python 3.10]
 # Explication
 Ce programme lance un navigateur et un keylogger en même temps , sert a récuperer les infos personelles d'une personne
 # Installation

